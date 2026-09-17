@@ -141,7 +141,7 @@ https://linkedin.com/in/aimannn-siddiqui-473a24343/
 https://instagram.com/aimabellaa_
 
 ▶️ **YouTube**
-https://youtube.com/
+https://www.youtube.com/@aimabellaaa
 
 ---
 
