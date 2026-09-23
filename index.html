@@ -11,16 +11,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/images/og-preview.jpg" />
 
-  <!-- ===== FAVICON — "AS" monogram (inline SVG, no image file needed) ===== -->
+  <!-- ===== FAVICON — "AS" monogram ===== -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23171717'/%3E%3Ctext x='50' y='68' font-family='Inter, Arial, sans-serif' font-size='52' font-weight='800' fill='%23E98DB3' text-anchor='middle' letter-spacing='-2'%3EAS%3C/text%3E%3C/svg%3E" />
-  <!-- Apple touch icon -->
   <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23171717'/%3E%3Ctext x='50' y='68' font-family='Inter, Arial, sans-serif' font-size='52' font-weight='800' fill='%23E98DB3' text-anchor='middle' letter-spacing='-2'%3EAS%3C/text%3E%3C/svg%3E" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
   <!-- External Stylesheet -->
@@ -52,6 +50,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Web Projects</a></li>
+        <li><a href="#client-work">Client Work</a></li>
         <li><a href="#graphic-design">Graphic Design</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -285,8 +284,149 @@
     </div>
   </section>
 
+  <!-- ========== CLIENT WORK (NEW SECTION) ========== -->
+  <section class="section" id="client-work" style="background: var(--bg-off);">
+    <div class="container">
+      <div class="eyebrow">Client Work</div>
+      <h2 class="section-title">Client Projects &amp; Collaborations</h2>
+      <p class="section-sub">Web development and social media design work delivered for clients.</p>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal" id="clientFilterBar">
+        <button class="filter-btn active" data-client-filter="all">All</button>
+        <button class="filter-btn" data-client-filter="web">Web Development</button>
+        <button class="filter-btn" data-client-filter="social">Social Media Design</button>
+      </div>
+
+      <!-- WEB DEVELOPMENT SUBSECTION -->
+      <div class="client-subsection" data-client-section="web">
+        <h3 class="client-subtitle reveal">
+          <i class="fas fa-laptop-code"></i> Web Development
+        </h3>
+        <div class="client-web-grid" id="clientWebGrid">
+          <!-- Client Project 1 -->
+          <article class="project-card client-card reveal" data-client-category="web">
+            <div class="preview">
+              <img src="assets/client-work/web-project-1.png" alt="Client website project preview" loading="lazy" />
+            </div>
+            <div class="info">
+              <span class="client-badge">Client Work</span>
+              <h3>Client Website Project</h3>
+              <p class="desc">Responsive business website with modern UI and clean layout.</p>
+              <div class="tech-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="actions">
+                <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Project <i class="fas fa-arrow-up-right-from-square"></i></a>
+                <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <!-- Client Project 2 -->
+          <article class="project-card client-card reveal reveal-delay-1" data-client-category="web">
+            <div class="preview">
+              <img src="assets/client-work/web-project-2.png" alt="Client landing page preview" loading="lazy" />
+            </div>
+            <div class="info">
+              <span class="client-badge">Client Work</span>
+              <h3>Client Landing Page</h3>
+              <p class="desc">High-converting landing page with smooth animations.</p>
+              <div class="tech-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GSAP</span>
+              </div>
+              <div class="actions">
+                <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Project <i class="fas fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+          <!-- Client Project 3 -->
+          <article class="project-card client-card reveal reveal-delay-2" data-client-category="web">
+            <div class="preview">
+              <img src="assets/client-work/web-project-3.png" alt="Client portfolio website preview" loading="lazy" />
+            </div>
+            <div class="info">
+              <span class="client-badge">Client Work</span>
+              <h3>Client Portfolio Website</h3>
+              <p class="desc">Personal portfolio site for a creative professional.</p>
+              <div class="tech-tags">
+                <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+              </div>
+              <div class="actions">
+                <a href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Project <i class="fas fa-arrow-up-right-from-square"></i></a>
+                <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- SOCIAL MEDIA DESIGN SUBSECTION -->
+      <div class="client-subsection" data-client-section="social" style="margin-top: 64px;">
+        <h3 class="client-subtitle reveal">
+          <i class="fas fa-palette"></i> Social Media Design
+        </h3>
+        <div class="client-social-grid" id="clientSocialGrid">
+          <!-- Design 1 -->
+          <div class="masonry-item client-social-item reveal" data-client-category="social">
+            <img src="assets/client-work/social-1.png" alt="Instagram carousel design for client" loading="lazy" />
+            <div class="overlay">
+              <span class="client-badge">Client Work</span>
+              <div class="title">Instagram Carousel</div>
+              <div class="cat">Instagram Carousel</div>
+            </div>
+          </div>
+          <!-- Design 2 -->
+          <div class="masonry-item client-social-item reveal reveal-delay-1" data-client-category="social">
+            <img src="assets/client-work/social-2.png" alt="Instagram post design for client" loading="lazy" />
+            <div class="overlay">
+              <span class="client-badge">Client Work</span>
+              <div class="title">Instagram Post</div>
+              <div class="cat">Instagram Post</div>
+            </div>
+          </div>
+          <!-- Design 3 -->
+          <div class="masonry-item client-social-item reveal reveal-delay-2" data-client-category="social">
+            <img src="assets/client-work/social-3.png" alt="Podcast cover design for client" loading="lazy" />
+            <div class="overlay">
+              <span class="client-badge">Client Work</span>
+              <div class="title">Podcast Cover</div>
+              <div class="cat">Podcast Cover</div>
+            </div>
+          </div>
+          <!-- Design 4 -->
+          <div class="masonry-item client-social-item reveal reveal-delay-3" data-client-category="social">
+            <img src="assets/client-work/social-4.png" alt="Promotional graphic for client" loading="lazy" />
+            <div class="overlay">
+              <span class="client-badge">Client Work</span>
+              <div class="title">Promotional Graphic</div>
+              <div class="cat">Promotional Graphic</div>
+            </div>
+          </div>
+          <!-- Design 5 -->
+          <div class="masonry-item client-social-item reveal" data-client-category="social">
+            <img src="assets/client-work/social-5.png" alt="YouTube thumbnail design for client" loading="lazy" />
+            <div class="overlay">
+              <span class="client-badge">Client Work</span>
+              <div class="title">YouTube Thumbnail</div>
+              <div class="cat">YouTube Thumbnail</div>
+            </div>
+          </div>
+          <!-- Design 6 -->
+          <div class="masonry-item client-social-item reveal reveal-delay-1" data-client-category="social">
+            <img src="assets/client-work/social-6.png" alt="Social media design for client" loading="lazy" />
+            <div class="overlay">
+              <span class="client-badge">Client Work</span>
+              <div class="title">Social Media Design</div>
+              <div class="cat">Social Media Design</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== GRAPHIC DESIGN ========== -->
-  <section class="section" id="graphic-design" style="background: var(--bg-off);">
+  <section class="section" id="graphic-design">
     <div class="container">
       <div class="eyebrow">Visual Work</div>
       <h2 class="section-title">Graphic Design</h2>
@@ -431,11 +571,11 @@
           <p class="role">Frontend Developer &amp; Graphic Designer</p>
           <p class="location"><i class="fas fa-map-pin" style="color: var(--accent-pink);"></i> Karachi, Pakistan</p>
           <ul>
-            <li><i class="fas fa-graduation-cap"></i> Education — Computer Science</li>
-            <li><i class="fas fa-code"></i> Technical Skills — HTML, CSS, JavaScript, PHP</li>
-            <li><i class="fas fa-tools"></i> Tools — Git, VS Code, Figma, Linux</li>
-            <li><i class="fas fa-project-diagram"></i> Projects — Planora, PixelForge, KidsZone</li>
-            <li><i class="fas fa-certificate"></i> Certifications / Learning — React, Modern Web</li>
+            <li><i class="fas fa-graduation-cap"></i> Education — Intermediate (Pre-Engineering), MYSA Public College · 75% · 2026</li>
+            <li><i class="fas fa-code"></i> Technical Skills — HTML5, CSS3, JavaScript, Python, PHP, MySQL, ASP.NET</li>
+            <li><i class="fas fa-tools"></i> Tools — Git, GitHub, VS Code, Vercel, Docker, Linux, Canva</li>
+            <li><i class="fas fa-project-diagram"></i> Projects — PixelForge, FreelancerHub, Planora, KidsZone</li>
+            <li><i class="fas fa-certificate"></i> Certifications — Prompt Engineering (SoloLearn, Jan 2026)</li>
           </ul>
         </div>
         <div style="display: flex; flex-direction: column; justify-content: center;">
@@ -443,7 +583,7 @@
             <a href="resume/Aiman_Siddiqui_Resume.pdf" target="_blank" class="btn btn-primary">View Resume <i class="fas fa-arrow-up-right-from-square"></i></a>
             <a href="resume/Aiman_Siddiqui_Resume.pdf" download class="btn btn-outline">Download Resume <i class="fas fa-download"></i></a>
           </div>
-          <p style="margin-top: 16px; font-size: 0.8rem; color: var(--secondary);">PDF file path is configurable in the code.</p>
+          <p style="margin-top: 16px; font-size: 0.8rem; color: var(--secondary);">Updated January 2026</p>
         </div>
       </div>
     </div>
@@ -459,7 +599,7 @@
         <a href="https://www.linkedin.com/in/aimannn-siddiqui-473a24343/" target="_blank" rel="noopener" class="social-card reveal">
           <i class="fab fa-linkedin-in"></i>
           <div class="platform">LinkedIn</div>
-          <div class="handle">/in/aimansiddiqui</div>
+          <div class="handle">/in/aimannn-siddiqui</div>
         </a>
         <a href="https://www.instagram.com/aimabellaa_/" target="_blank" rel="noopener" class="social-card reveal reveal-delay-1">
           <i class="fab fa-instagram"></i>
@@ -474,7 +614,7 @@
         <a href="https://github.com/a-aimann07" target="_blank" rel="noopener" class="social-card reveal reveal-delay-3">
           <i class="fab fa-github"></i>
           <div class="platform">GitHub</div>
-          <div class="handle">aimannn07</div>
+          <div class="handle">a-aimann07</div>
         </a>
       </div>
     </div>
@@ -559,13 +699,14 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#client-work">Client Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="footer-socials">
           <a href="https://www.linkedin.com/in/aimannn-siddiqui-473a24343/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://www.instagram.com/aimabellaa_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="https://www.youtube.com/@aimabellaaa" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="https://github.com/a-aimann07ui" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/a-aimann07" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
       <div class="footer-credit">Designed &amp; Developed by Aiman Siddiqui</div>
@@ -574,8 +715,16 @@
 
   <!-- ========== LIGHTBOX ========== -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-content">
+      <img src="" alt="Enlarged design preview" id="lightboxImg" />
+      <div class="lightbox-caption" id="lightboxCaption">
+        <div class="lightbox-title" id="lightboxTitle"></div>
+        <div class="lightbox-cat" id="lightboxCat"></div>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
     <span class="close" id="lightboxClose" aria-label="Close">&times;</span>
-    <img src="" alt="Enlarged design preview" id="lightboxImg" />
   </div>
 
   <!-- External JavaScript -->

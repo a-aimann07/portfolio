@@ -1540,3 +1540,218 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
   }
+
+
+  /* ============================================
+   CLIENT WORK SECTION (NEW)
+   ============================================ */
+
+.client-subsection {
+  position: relative;
+}
+
+.client-subtitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 28px;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-subtitle i {
+  color: var(--accent-pink);
+  font-size: 1.15rem;
+}
+
+/* Client web project grid: 3 cols desktop */
+.client-web-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Client social grid: responsive masonry-like */
+.client-social-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Client work badge */
+.client-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-pink);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  width: fit-content;
+}
+
+.client-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.9;
+}
+
+/* Client card — extend project-card */
+.client-card .info .client-badge {
+  margin-bottom: 10px;
+}
+
+/* Social item overlay adjustments for client work */
+.client-social-item {
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  background: var(--soft-pink);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  break-inside: avoid;
+}
+
+.client-social-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.client-social-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  object-fit: cover;
+  height: auto;
+  min-height: 220px;
+}
+
+.client-social-item:hover img {
+  transform: scale(1.03);
+}
+
+.client-social-item .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 55%);
+  opacity: 0;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+}
+
+.client-social-item:hover .overlay {
+  opacity: 1;
+}
+
+.client-social-item .overlay .client-badge {
+  margin-bottom: 10px;
+}
+
+.client-social-item .overlay .title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.client-social-item .overlay .cat {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8rem;
+}
+
+/* ---------- LIGHTBOX NAVIGATION (NEW) ---------- */
+.lightbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox-caption {
+  text-align: center;
+  color: #fff;
+}
+
+.lightbox-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.lightbox-cat {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+  z-index: 10;
+}
+
+.lightbox-nav:hover {
+  background: var(--accent-pink);
+  border-color: var(--accent-pink);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.lightbox-prev { left: 24px; }
+.lightbox-next { right: 24px; }
+
+/* ---------- CLIENT WORK RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  .client-web-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .client-social-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .client-web-grid {
+    grid-template-columns: 1fr;
+  }
+  .client-social-grid {
+    grid-template-columns: 1fr;
+  }
+  .client-subtitle {
+    font-size: 1.1rem;
+  }
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 0.85rem;
+  }
+}
